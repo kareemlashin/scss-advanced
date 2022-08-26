@@ -1,0 +1,57 @@
+.element {
+  Font-weight: 400;
+}
+
+.element {
+  color: #324e85;
+}
+
+.container {
+  width: 100%;
+  color: grey;
+}
+.container.class {
+  background-color: green;
+}
+.container .class {
+  background-color: green;
+}
+.container::after {
+  background-color: green;
+}
+.container div {
+  border: 1px solid black;
+}
+.container div a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+.container div a::hover {
+  color: #b2b2b2;
+}
+
+.header, .sub-header {
+  color: grey;
+}
+
+.sub-header {
+  font-size: 40px;
+}
+
+.header, .sub-header {
+  color: grey;
+  /* add mixin */
+}
+
+.sub-header {
+  color: grey;
+  font-size: 40px;
+}
+
+.header, .sub-header {
+  font-size: 20px;
+}
+
+.sub-header {
+  font-size: 20px;
+}/*# sourceMappingURL=index.css.map */

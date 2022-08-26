@@ -1,0 +1,77 @@
+$font-light : 400;
+$font-thick: 500;
+$font-heavy: 600;
+
+.element{
+    Font-weight: $font-light;
+}
+
+//color palette for a project to maintain consistency
+
+$product-dark-blue: #324e85;
+$product-light-blue:#4c7396;
+$product-lighter-blue:#9bb7cf;
+
+.element{
+    color: $product-dark-blue;
+}
+
+.container {
+    width: 100%;
+    color: grey;
+    &.class{
+        background-color: green;
+    }
+    .class{
+        background-color: green;
+    }
+    &::after{
+        background-color: green;
+    }
+    div {
+      border: 1px solid black;
+  
+      a {
+        text-decoration: none;
+        color: #f2f2f2;
+        &::hover {
+          color: #b2b2b2;
+        }
+      }
+    }
+  }
+  
+  .header {
+    color: grey;
+  }
+  
+  .sub-header {
+    @extend .header;
+    font-size: 40px;
+  }
+  @mixin red-color{
+    color: grey;
+  }
+  
+  .header{
+    @include red-color;  /* add mixin */
+  }
+  
+  .sub-header{
+    @include red-color;
+    font-size: 40px;
+  }
+  
+  @mixin fontSize ($params: 10px){
+    font-size: $params;
+  }
+  
+  .header{
+    @include fontSize(20px);
+  }
+  
+  .sub-header{
+    @include fontSize(20px);
+  }
+// https://gist.github.com/hofmannsven/b219051467f86f2ac469 
+// https://usermanual.wiki/Document/SASS20Guide.1149299103.pdf
